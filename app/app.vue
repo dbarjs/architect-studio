@@ -1,0 +1,3 @@
+<UApp>
+  <NuxtPage />
+</UApp>
