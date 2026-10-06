@@ -1,0 +1,1043 @@
+{
+  "title": "Double bed room",
+  "description": "Empty 6 × 6 m bedroom furnished with a double bed 140 × 200 and two nightstands, a 3 m wardrobe, a 1.8 m work desk with its chair, a two-seat sofa facing a 65\" TV on its rack, and a folding room divider. The project offers five layouts of the same pieces: the bed set across the north-east corner behind the divider, the bed with its headboard on the north wall, a sleeping alcove on the east side walled off by the wardrobe and the divider, a feng shui plan with the bed in the commanding position facing both doors, and a feng shui plan for a single man with the bed turned away from the bathroom door.",
+  "resources": {
+    "furniture": {
+      "bed": {
+        "type": "bed",
+        "label": "Double bed 140 × 200",
+        "size": {
+          "width": 1.4,
+          "depth": 2
+        },
+        "facing": "south",
+        "clearance": {
+          "side": "front",
+          "distance": 0.5,
+          "label": "foot"
+        },
+        "notes": "Headboard on the north edge of the footprint, feet pointing south; 0.5 m must stay clear at the foot."
+      },
+      "nightstand": {
+        "type": "nightstand",
+        "label": "Nightstand",
+        "size": {
+          "width": 0.45,
+          "depth": 0.45
+        }
+      },
+      "wardrobe": {
+        "type": "wardrobe",
+        "label": "Wardrobe 300 × 60",
+        "size": {
+          "width": 3,
+          "depth": 0.6
+        },
+        "facing": "south",
+        "clearance": {
+          "side": "front",
+          "distance": 0.9,
+          "label": "doors"
+        }
+      },
+      "divider": {
+        "type": "divider",
+        "label": "Room divider 250 × 5",
+        "size": {
+          "width": 2.5,
+          "depth": 0.05
+        },
+        "notes": "Folding screen as long as the headboard plus both nightstands, for screening the bed from the rest of the room."
+      },
+      "desk": {
+        "type": "desk",
+        "label": "Desk 180 × 70",
+        "size": {
+          "width": 1.8,
+          "depth": 0.7
+        },
+        "facing": "north",
+        "clearance": {
+          "side": "back",
+          "distance": 0.9,
+          "label": "chair",
+          "allows": [
+            "chair"
+          ]
+        },
+        "notes": "Work desk; 0.9 m must stay clear on the chair side."
+      },
+      "chair": {
+        "type": "chair",
+        "label": "Office chair",
+        "size": {
+          "width": 0.6,
+          "depth": 0.6
+        },
+        "facing": "north"
+      },
+      "sofa": {
+        "type": "sofa",
+        "label": "Two-seat sofa 160 × 90",
+        "size": {
+          "width": 1.6,
+          "depth": 0.9
+        },
+        "facing": "south",
+        "notes": "Two-seater; the seat faces the TV."
+      },
+      "tv-rack": {
+        "type": "tv-unit",
+        "label": "TV rack 160 × 45",
+        "size": {
+          "width": 1.6,
+          "depth": 0.45
+        },
+        "facing": "south",
+        "notes": "Low rack carrying the 65\" TV."
+      },
+      "tv": {
+        "type": "tv",
+        "label": "TV 65\"",
+        "size": {
+          "width": 1.45,
+          "depth": 0.08
+        },
+        "facing": "south",
+        "notes": "65-inch screen, about 1.45 m wide, standing on the rack 0.15 m from its back edge."
+      }
+    },
+    "groups": {
+      "bed-group": {
+        "label": "Bed with nightstands",
+        "size": {
+          "width": 2.5,
+          "depth": 2
+        },
+        "notes": "Double bed with a nightstand on each side, 0.1 m gap, flush with the headboard.",
+        "items": {
+          "nightstand-left": {
+            "use": "nightstand",
+            "x": 0,
+            "y": 0
+          },
+          "bed": {
+            "x": 0.55,
+            "y": 0
+          },
+          "nightstand-right": {
+            "use": "nightstand",
+            "x": 2.05,
+            "y": 0
+          }
+        }
+      },
+      "bed-group-with-divider": {
+        "label": "Bed with nightstands and divider",
+        "size": {
+          "width": 2.5,
+          "depth": 2.25
+        },
+        "notes": "The bed group with the folding divider standing 0.2 m behind the headboard, parallel to it, so the screened bed moves and turns as one unit.",
+        "items": {
+          "divider": {
+            "x": 0,
+            "y": 0
+          }
+        },
+        "groups": {
+          "bed-group": {
+            "x": 0,
+            "y": 0.25
+          }
+        }
+      },
+      "desk-group": {
+        "label": "Desk with chair",
+        "size": {
+          "width": 1.8,
+          "depth": 1.4
+        },
+        "notes": "The office chair stands 0.1 m behind the desk, centred on it, inside the desk's chair clearance.",
+        "items": {
+          "desk": {
+            "x": 0,
+            "y": 0
+          },
+          "chair": {
+            "x": 0.6,
+            "y": 0.8
+          }
+        }
+      },
+      "tv-group": {
+        "label": "TV 65\" on its rack",
+        "size": {
+          "width": 1.6,
+          "depth": 0.45
+        },
+        "notes": "The TV stands centred on the rack 0.1 m from its back edge, so the screen face sits 0.18 m in from the wall.",
+        "items": {
+          "tv-rack": {
+            "x": 0,
+            "y": 0
+          },
+          "tv": {
+            "x": 0.075,
+            "y": 0.1
+          }
+        }
+      }
+    },
+    "rooms": {
+      "corner": {
+        "title": "Bed across the corner",
+        "description": "The bed group is set at 45° across the north-east corner, foot of the bed towards the corner, 0.5 m off the north and east walls for passage. The folding divider is part of the composed group, running parallel to the headboard 0.2 m behind it and screening the sleeping corner from the rest of the room. The desk backs onto the divider like onto a wall: it stands parallel to it on the room side, 0.1 m off the screen, the user facing the divider with the north window to their left and the east window to their right, the chair on the room side reached straight from the west passage. The wardrobe stands on the west part of the south wall, and the lounge takes the pocket between the bed and the east end of the south wall: the TV rack against the wall and the two-seat sofa facing it 1.5 m from the screen, its back towards the bed. The plan shows no conflicts.",
+        "size": {
+          "width": 6,
+          "depth": 6
+        },
+        "walls": [
+          {
+            "id": "north",
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              6,
+              0
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "east",
+            "from": [
+              6,
+              0
+            ],
+            "to": [
+              6,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "south",
+            "from": [
+              6,
+              6
+            ],
+            "to": [
+              0,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "west",
+            "from": [
+              0,
+              6
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "thickness": 0.15
+          }
+        ],
+        "openings": [
+          {
+            "type": "window",
+            "wall": "north",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "window",
+            "wall": "east",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "door",
+            "wall": "south",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          },
+          {
+            "type": "door",
+            "wall": "west",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          }
+        ],
+        "zones": [
+          {
+            "id": "sleeping",
+            "label": "Sleeping",
+            "x": 2.5,
+            "y": 0,
+            "width": 3.5,
+            "depth": 2.5
+          },
+          {
+            "id": "office",
+            "label": "Work",
+            "x": 1.5,
+            "y": 2.5,
+            "width": 2.5,
+            "depth": 1.95
+          },
+          {
+            "id": "lounge",
+            "label": "Lounge",
+            "x": 4.4,
+            "y": 3.4,
+            "width": 1.6,
+            "depth": 2.6
+          }
+        ],
+        "groups": {
+          "bed-group-with-divider": {
+            "x": 2.53,
+            "y": 0.11,
+            "rotation": 225,
+            "notes": "The whole unit (divider, nightstands and bed) is rotated 225° around its centre so the foot of the bed points into the north-east corner and the headboard faces the room, with the divider behind it. Both foot corners sit 0.5 m from the nearest wall, which satisfies the 0.5 m foot clearance."
+          },
+          "desk-group": {
+            "x": 1.717,
+            "y": 2.02,
+            "rotation": 45,
+            "notes": "Desk and chair turned 45° so the desk's front edge runs parallel to the divider 0.1 m from it, centred on it; the user faces the divider with the windows on either side, the chair and its 0.9 m clearance on the room side, 0.08 m short of the wardrobe's door clearance."
+          },
+          "tv-group": {
+            "x": 4.4,
+            "y": 5.55,
+            "rotation": 180,
+            "notes": "Rack against the south wall facing north, flush with the east wall and 0.05 m east of the wardrobe; the screen faces the sofa 1.5 m away."
+          }
+        },
+        "furniture": {
+          "wardrobe": {
+            "x": 1.35,
+            "y": 5.4,
+            "facing": "north",
+            "notes": "Against the south wall, 0.05 m east of the door swing in the south-west corner and 0.05 m west of the TV rack; 0.9 m free in front for the doors."
+          },
+          "sofa": {
+            "x": 4.4,
+            "y": 3.42,
+            "facing": "south",
+            "notes": "Two-seater flush with the east wall facing the TV, 1.5 m from the screen; its back is 0.13 m south of the left nightstand and 0.6 m from the bed's side."
+          }
+        }
+      },
+      "headboard-north": {
+        "title": "Headboard on the north wall",
+        "description": "Same pieces in a conventional arrangement: the bed group stands against the north wall centred under the 2.5 m window, which it spans exactly, foot towards the room with 0.5 m clear at the foot. The divider stands west of the bed, running north to south, so the bed is screened from both west-side doors, the one in the south-west corner and the one near the north-west corner, while a 1.35 m passage stays open along the west wall between them. The wardrobe takes the south wall opposite the bed, and the desk stands against the east wall in the middle of the east window, the user facing south with the window light from the left. The two-seat sofa stands at the foot of the bed facing south, and the TV rack takes the stretch of south wall between the door swing and the wardrobe, 1.5 m from the sofa, so the screen can also be watched from the bed over the sofa.",
+        "size": {
+          "width": 6,
+          "depth": 6
+        },
+        "walls": [
+          {
+            "id": "north",
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              6,
+              0
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "east",
+            "from": [
+              6,
+              0
+            ],
+            "to": [
+              6,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "south",
+            "from": [
+              6,
+              6
+            ],
+            "to": [
+              0,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "west",
+            "from": [
+              0,
+              6
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "thickness": 0.15
+          }
+        ],
+        "openings": [
+          {
+            "type": "window",
+            "wall": "north",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "window",
+            "wall": "east",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "door",
+            "wall": "south",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          },
+          {
+            "type": "door",
+            "wall": "west",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          }
+        ],
+        "zones": [
+          {
+            "id": "sleeping",
+            "label": "Sleeping",
+            "x": 1.35,
+            "y": 0,
+            "width": 2.85,
+            "depth": 2.5
+          },
+          {
+            "id": "office",
+            "label": "Work",
+            "x": 4.2,
+            "y": 1.75,
+            "width": 1.8,
+            "depth": 1.75
+          },
+          {
+            "id": "lounge",
+            "label": "Lounge",
+            "x": 1.4,
+            "y": 2.5,
+            "width": 1.6,
+            "depth": 3.5
+          },
+          {
+            "id": "storage",
+            "label": "Wardrobe",
+            "x": 3,
+            "y": 4.5,
+            "width": 3,
+            "depth": 1.5
+          }
+        ],
+        "groups": {
+          "bed-group": {
+            "x": 1.75,
+            "y": 0,
+            "notes": "Headboard and nightstands flush with the north wall, the 2.5 m unit centred on and exactly as wide as the 2.5 m window."
+          },
+          "desk-group": {
+            "x": 4.2,
+            "y": 2,
+            "rotation": 180,
+            "notes": "Desk flush with the east wall under the middle of the east window, user facing south: the chair stays clear of the nightstand, the desk 1.1 m north of the wardrobe's door clearance."
+          },
+          "tv-group": {
+            "x": 1.35,
+            "y": 5.55,
+            "rotation": 180,
+            "notes": "Rack against the south wall facing north, 0.05 m east of the door swing and 0.05 m west of the wardrobe; the screen faces the sofa and, beyond it, the bed."
+          }
+        },
+        "furniture": {
+          "divider": {
+            "x": 1.35,
+            "y": 0.1,
+            "rotation": 90,
+            "notes": "Standing north to south 0.35 m west of the left nightstand, it hides the bed from both doors and leaves 1.35 m of passage along the west wall, clear of the north-west door swing."
+          },
+          "wardrobe": {
+            "x": 3,
+            "y": 5.4,
+            "facing": "north",
+            "notes": "On the south wall facing the bed, flush with the east wall so 1.7 m of the south wall stays open between it and the door swing; 0.9 m free in front for the doors."
+          },
+          "sofa": {
+            "x": 1.45,
+            "y": 3.42,
+            "facing": "south",
+            "notes": "Two-seater 0.05 m east of the divider facing the TV on the south wall, 1.5 m from the screen; 0.9 m stays open between its back and the bed's foot clearance as the passage to the desk side."
+          }
+        }
+      },
+      "alcove-east": {
+        "title": "Sleeping alcove behind the wardrobe",
+        "description": "The east half becomes a private sleeping alcove: the bed group stands with its headboard on the east wall, centred on and exactly spanning the east window, and is walled off from both doors by the wardrobe, which stands free in the room running north to south with its back to the bed and its doors opening west onto a dressing area, and by the divider, which runs east to west from the wardrobe's line to the east wall. The only way in is a 1.3 m opening between the divider and the wardrobe; neither door has a view of the bed, and the opening is aligned with the TV so the screen can still be watched from the bed over the sofa. The desk takes the north-east corner outside the alcove, the user facing north with the north window on their left. The lounge takes the west side between the two doors: the TV rack on the west wall and the sofa facing it 1.5 m from the screen, its back to the alcove opening. The plan shows no conflicts.",
+        "size": {
+          "width": 6,
+          "depth": 6
+        },
+        "walls": [
+          {
+            "id": "north",
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              6,
+              0
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "east",
+            "from": [
+              6,
+              0
+            ],
+            "to": [
+              6,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "south",
+            "from": [
+              6,
+              6
+            ],
+            "to": [
+              0,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "west",
+            "from": [
+              0,
+              6
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "thickness": 0.15
+          }
+        ],
+        "openings": [
+          {
+            "type": "window",
+            "wall": "north",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "window",
+            "wall": "east",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "door",
+            "wall": "south",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          },
+          {
+            "type": "door",
+            "wall": "west",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          }
+        ],
+        "zones": [
+          {
+            "id": "lounge",
+            "label": "Lounge & entry",
+            "x": 0,
+            "y": 0,
+            "width": 3.35,
+            "depth": 3
+          },
+          {
+            "id": "office",
+            "label": "Work",
+            "x": 3.35,
+            "y": 0,
+            "width": 2.65,
+            "depth": 1.65
+          },
+          {
+            "id": "sleeping",
+            "label": "Sleeping alcove",
+            "x": 3.35,
+            "y": 1.65,
+            "width": 2.65,
+            "depth": 4.35
+          },
+          {
+            "id": "dressing",
+            "label": "Dressing",
+            "x": 0,
+            "y": 3,
+            "width": 3.35,
+            "depth": 3
+          }
+        ],
+        "groups": {
+          "bed-group": {
+            "x": 4,
+            "y": 1.75,
+            "rotation": 90,
+            "notes": "Headboard and nightstands flush with the east wall, the 2.5 m unit centred on and exactly as wide as the east window; the foot points west at the back of the wardrobe with 0.5 m clear, 0.6 m stays open between the bed and the divider on the north side and 2.3 m on the south side."
+          },
+          "desk-group": {
+            "x": 4.2,
+            "y": 0,
+            "notes": "Desk against the north wall in the north-east corner, outside the alcove, user facing north with the north window ending at the desk's left edge; the chair clearance stops 0.05 m short of the divider."
+          },
+          "tv-group": {
+            "x": 0,
+            "y": 1.3,
+            "rotation": 270,
+            "notes": "Rack against the west wall between the two doors facing east, touching the north-west door swing; the screen faces the sofa 1.5 m away and, through the alcove opening, the bed."
+          }
+        },
+        "furniture": {
+          "wardrobe": {
+            "x": 2.75,
+            "y": 3,
+            "facing": "west",
+            "notes": "Free-standing, running north to south from the south wall, its back forming the alcove's west wall 0.65 m from the bed foot; the doors open west onto the dressing area with 0.9 m free, which is also the route from the south-west door."
+          },
+          "divider": {
+            "x": 3.35,
+            "y": 1.65,
+            "notes": "Running east to west from the wardrobe's east face to 0.15 m off the east wall, it closes the alcove on the north and separates it from the desk; the 1.3 m gap between its west end and the wardrobe is the alcove entrance."
+          },
+          "sofa": {
+            "x": 1.68,
+            "y": 1.3,
+            "facing": "west",
+            "notes": "Two-seater facing the TV 1.5 m from the screen, centred on it, its back 0.77 m from the alcove entrance so the passage from the north-west door stays open behind it."
+          }
+        }
+      },
+      "feng-shui": {
+        "title": "Feng shui commanding position",
+        "description": "Laid out on feng shui principles. The bed takes the commanding position: headboard entirely on the solid east wall in the south-east corner, diagonally opposite both doors so that a person lying down sees the west door and the south door without being in line with either, and nothing tall at the foot. One nightstand is left out so that the bed clears the east window; it stands on the open north side. The desk sits in the north-east corner with the chair's back to the east wall, the user facing west with the west door in view just off its axis and the north window lighting the desk from the right; the divider stands between desk and bed to keep work and rest apart. The TV faces north, away from the bed, so the sleeper only sees the back of the rack, and the sofa sits opposite it against the north wall. The wardrobe stands against the west wall with plain, unmirrored doors opening onto a dressing lane that is also the route from the south door; both entries are left open and the diagonal from the west door to the bed is kept free of furniture. The compromises are the bed having one side against the wall and the sofa's back reaching under the north window. The plan shows no conflicts.",
+        "size": {
+          "width": 6,
+          "depth": 6
+        },
+        "walls": [
+          {
+            "id": "north",
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              6,
+              0
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "east",
+            "from": [
+              6,
+              0
+            ],
+            "to": [
+              6,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "south",
+            "from": [
+              6,
+              6
+            ],
+            "to": [
+              0,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "west",
+            "from": [
+              0,
+              6
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "thickness": 0.15
+          }
+        ],
+        "openings": [
+          {
+            "type": "window",
+            "wall": "north",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "window",
+            "wall": "east",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "door",
+            "wall": "south",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          },
+          {
+            "type": "door",
+            "wall": "west",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          }
+        ],
+        "zones": [
+          {
+            "id": "entry",
+            "label": "Entry",
+            "x": 0,
+            "y": 0,
+            "width": 1.5,
+            "depth": 2
+          },
+          {
+            "id": "lounge",
+            "label": "Lounge",
+            "x": 1.5,
+            "y": 0,
+            "width": 2,
+            "depth": 4.25
+          },
+          {
+            "id": "office",
+            "label": "Work",
+            "x": 3.5,
+            "y": 0,
+            "width": 2.5,
+            "depth": 2.65
+          },
+          {
+            "id": "dressing",
+            "label": "Dressing",
+            "x": 0,
+            "y": 2,
+            "width": 1.5,
+            "depth": 2.05
+          },
+          {
+            "id": "south-entry",
+            "label": "South entry & dressing",
+            "x": 0,
+            "y": 4.25,
+            "width": 3.5,
+            "depth": 1.75
+          },
+          {
+            "id": "sleeping",
+            "label": "Sleeping",
+            "x": 3.5,
+            "y": 2.65,
+            "width": 2.5,
+            "depth": 3.35
+          }
+        ],
+        "groups": {
+          "desk-group": {
+            "x": 4.4,
+            "y": 0.75,
+            "rotation": 270,
+            "notes": "Chair with its back to the solid east wall, user facing west with the west door in view 0.35 m to the right of the desk axis; the north window lights the desk from the right. 0.2 m behind the chair keeps the chair clearance inside the room."
+          },
+          "tv-group": {
+            "x": 1.5,
+            "y": 3.8,
+            "rotation": 180,
+            "notes": "Rack facing north towards the sofa, its back to the sleeping side so the screen is never in the bed's view, and placed south of the sightlines from the pillows to the west door. Screen face 3.17 m from the sofa seat (about 2.2 × the 65\" width)."
+          }
+        },
+        "furniture": {
+          "bed": {
+            "x": 4,
+            "y": 4.6,
+            "facing": "west",
+            "notes": "Commanding position: headboard entirely on the solid east wall below the window, south side against the south wall, feet pointing west. From the pillows both doors are in view diagonally and neither door nor window is in line with the bed; the open north side has 1.95 m of floor up to the divider and the foot clearance faces the open floor."
+          },
+          "nightstand": {
+            "x": 5.55,
+            "y": 4.15,
+            "notes": "Single nightstand on the open side of the bed, flush with the headboard; only the nightstand, not the bed, reaches 0.1 m under the edge of the east window. The second nightstand is left out so that the bed can sit on solid wall."
+          },
+          "wardrobe": {
+            "x": 0,
+            "y": 2,
+            "facing": "east",
+            "notes": "Against the west wall, clear of both door swings; plain doors so no mirror faces the bed. The 0.9 m door clearance doubles as the route from the south door to the lounge."
+          },
+          "divider": {
+            "x": 3.5,
+            "y": 2.6,
+            "notes": "Screen between the work nook and the sleeping zone, 0.05 m south of the desk; its west end stays well north of the sightlines from the pillows to the west door."
+          },
+          "sofa": {
+            "x": 1.5,
+            "y": 0,
+            "facing": "south",
+            "notes": "Back to the north wall facing the TV; starts 0.6 m past the open west door so the entry stays clear. Its back reaches 1.35 m under the north window, the layout's one backing compromise."
+          }
+        }
+      },
+      "feng-shui-single": {
+        "title": "Feng shui for a single man",
+        "description": "Feng shui plan for one occupant, with the west door treated as the main entrance from the leisure area and the south door as the route to the bathroom. The bed takes the commanding position in the far south-east corner: headboard on the solid south wall, one side against the east wall, feet pointing north at no door or window, and the west door in view diagonally from the pillow while the bathroom door stays out of sight on the headboard wall, never facing the bed. The single nightstand stands on the open side. The desk fills the north-east corner with the chair's back to the east wall and the user facing west towards the entrance, lit from the right by the north window. The sofa stands in the middle of the room with the divider as a solid back, looking south at the TV, which stands against the south wall beside the headboard wall, facing north, so the screen is behind the sleeper and edge-on to the bed; the floor between the sofa and the TV wall is empty, keeping both the diagonal between the bed and the west door and the night walk from the bedside to the bathroom door free of anything to stumble over. The wardrobe stands on the west wall, its door lane joining the entry gallery, the lounge and the bathroom route, so the morning path from bed to wardrobe to bathroom is short and never crosses the work corner. Compromises: the TV shares the bathroom-route side of the room, so the route runs in front of it, and the divider holds back some north-window light from the lounge. The plan shows no conflicts.",
+        "size": {
+          "width": 6,
+          "depth": 6
+        },
+        "walls": [
+          {
+            "id": "north",
+            "from": [
+              0,
+              0
+            ],
+            "to": [
+              6,
+              0
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "east",
+            "from": [
+              6,
+              0
+            ],
+            "to": [
+              6,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "south",
+            "from": [
+              6,
+              6
+            ],
+            "to": [
+              0,
+              6
+            ],
+            "thickness": 0.15
+          },
+          {
+            "id": "west",
+            "from": [
+              0,
+              6
+            ],
+            "to": [
+              0,
+              0
+            ],
+            "thickness": 0.15
+          }
+        ],
+        "openings": [
+          {
+            "type": "window",
+            "wall": "north",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "window",
+            "wall": "east",
+            "offset": 1.75,
+            "width": 2.5
+          },
+          {
+            "type": "door",
+            "wall": "south",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          },
+          {
+            "type": "door",
+            "wall": "west",
+            "offset": 4.7,
+            "width": 0.9,
+            "swing": "right"
+          }
+        ],
+        "zones": [
+          {
+            "id": "entry",
+            "label": "Entry gallery",
+            "x": 0,
+            "y": 0,
+            "width": 4,
+            "depth": 1.85
+          },
+          {
+            "id": "office",
+            "label": "Work",
+            "x": 4,
+            "y": 0,
+            "width": 2,
+            "depth": 3.5
+          },
+          {
+            "id": "lounge",
+            "label": "Lounge",
+            "x": 1.5,
+            "y": 1.85,
+            "width": 2.5,
+            "depth": 2.45
+          },
+          {
+            "id": "dressing",
+            "label": "Dressing",
+            "x": 0,
+            "y": 1.85,
+            "width": 1.5,
+            "depth": 2.45
+          },
+          {
+            "id": "bath-route",
+            "label": "Route to the bathroom",
+            "x": 0,
+            "y": 4.3,
+            "width": 4,
+            "depth": 1.25
+          },
+          {
+            "id": "tv-wall",
+            "label": "TV wall",
+            "x": 1.5,
+            "y": 5.55,
+            "width": 2.5,
+            "depth": 0.45
+          },
+          {
+            "id": "sleeping",
+            "label": "Sleeping",
+            "x": 4,
+            "y": 3.5,
+            "width": 2,
+            "depth": 2.5
+          }
+        ],
+        "groups": {
+          "desk-group": {
+            "x": 4.4,
+            "y": 0.75,
+            "rotation": 270,
+            "notes": "Chair with its back to the solid east wall, user facing west across the entry gallery to the main door, 0.35 m south of the door's axis; the north window lights the desk from the right. 0.2 m behind the chair keeps the chair clearance inside the room."
+          },
+          "tv-group": {
+            "x": 2.2,
+            "y": 5.55,
+            "rotation": 180,
+            "notes": "Rack against the south wall beside the bed's headboard wall, facing north towards the sofa. Nothing stands between the bedside and the bathroom door, so the night walk is a clear diagonal; the screen is behind the sleeper and seen edge-on from the pillow. Screen face 3.0 m from the sofa seat (about 2.1 × the 65\" width)."
+          }
+        },
+        "furniture": {
+          "bed": {
+            "x": 4.6,
+            "y": 4,
+            "facing": "north",
+            "notes": "Commanding position for the main (west) door: headboard entirely on the solid south wall, east side against the east wall, feet pointing north at open floor. The west door is seen diagonally from the pillow; the bathroom door is on the headboard wall, 3.3 m away, out of sight and not facing the bed. 0.6 m of floor on the open west side."
+          },
+          "nightstand": {
+            "x": 4.05,
+            "y": 5.55,
+            "notes": "Single nightstand on the open west side, flush with the headboard; the second nightstand is left out for a one-person bed."
+          },
+          "wardrobe": {
+            "x": 0,
+            "y": 2,
+            "facing": "east",
+            "notes": "Against the west wall, clear of both door swings; plain doors so no mirror faces the bed. Its 0.9 m door lane links the entry gallery, the lounge and the bathroom route."
+          },
+          "divider": {
+            "x": 1.85,
+            "y": 1.85,
+            "notes": "Stands behind the sofa as its solid back, separating the entry gallery from the lounge; 0.05 m short of the desk so nothing touches the work corner, and 0.35 m east of the wardrobe lane so the route from the entrance stays 1.25 m wide."
+          },
+          "sofa": {
+            "x": 2.6,
+            "y": 1.9,
+            "facing": "south",
+            "notes": "Back to the divider, seat facing the TV across the open centre of the room. Its south-west corner stays north of every sightline from the pillow to the west door."
+          }
+        }
+      }
+    }
+  },
+  "templates": [
+    {
+      "room": "corner"
+    },
+    {
+      "room": "headboard-north"
+    },
+    {
+      "room": "alcove-east"
+    },
+    {
+      "room": "feng-shui"
+    },
+    {
+      "room": "feng-shui-single"
+    }
+  ]
+}

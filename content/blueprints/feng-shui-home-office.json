@@ -1,0 +1,274 @@
+{
+  "title": "Feng shui home office suite",
+  "description": "6 × 6 m room for a single man who works from home, with the same doors and windows as the double bed room: the west door to the leisure area, the south door to the bathroom and the rest of the house, and an air conditioner high on the south end of the east wall. A partition splits the room into a public west side (entry, desk and TV lounge, all facing the doors) and a private east suite (reading nook, double bed with its own TV, and dressing) where the bed is out of sight from both doors.",
+  "resources": {
+    "furniture": {
+      "bed": {
+        "type": "bed",
+        "label": "Double bed 140 × 200",
+        "size": { "width": 1.4, "depth": 2.0 },
+        "facing": "south",
+        "clearance": { "side": "front", "distance": 0.5, "label": "foot" },
+        "notes": "Headboard on the north edge of the footprint, feet pointing south; 0.5 m must stay clear at the foot."
+      },
+      "nightstand": {
+        "type": "nightstand",
+        "label": "Nightstand",
+        "size": { "width": 0.45, "depth": 0.45 }
+      },
+      "headboard-panel": {
+        "type": "divider",
+        "label": "Headboard panel",
+        "size": { "width": 2.7, "depth": 0.05 },
+        "notes": "Solid upholstered panel about 1.3 m high, as wide as the bed and both nightstands plus 0.1 m on each side, giving the bed a solid back where the wall is a window. Daylight still comes in above it."
+      },
+      "partition": {
+        "type": "divider",
+        "label": "Partition 1.8 m high",
+        "size": { "width": 4.0, "depth": 0.1 },
+        "notes": "Solid partition about 1.8 m high (slatted wood or panelled), stiff enough to carry a TV. Above eye height for privacy, but open to the ceiling so the air conditioner and the light reach both sides."
+      },
+      "desk": {
+        "type": "desk",
+        "label": "Desk 160 × 70",
+        "size": { "width": 1.6, "depth": 0.7 },
+        "facing": "north",
+        "clearance": { "side": "back", "distance": 0.9, "label": "chair", "allows": ["chair"] },
+        "notes": "Work desk; 0.9 m must stay clear on the chair side."
+      },
+      "office-chair": {
+        "type": "chair",
+        "label": "Chair",
+        "size": { "width": 0.6, "depth": 0.6 },
+        "facing": "north"
+      },
+      "sofa": {
+        "type": "sofa",
+        "label": "Sofa 220 × 90",
+        "size": { "width": 2.2, "depth": 0.9 },
+        "facing": "south",
+        "notes": "Three-seater, long enough to lie down on for films."
+      },
+      "coffee-table": {
+        "type": "coffee-table",
+        "label": "Coffee table",
+        "size": { "width": 1.0, "depth": 0.5 }
+      },
+      "tv": {
+        "type": "tv",
+        "label": "TV 55\"",
+        "size": { "width": 1.23, "depth": 0.06 },
+        "facing": "south",
+        "notes": "55-inch screen for the lounge, about 1.23 m wide, wall-mounted."
+      },
+      "bedroom-tv": {
+        "type": "tv",
+        "label": "TV 43\"",
+        "size": { "width": 0.96, "depth": 0.06 },
+        "facing": "south",
+        "notes": "Small 43-inch screen for watching from bed, about 0.96 m wide, wall-mounted."
+      },
+      "wardrobe": {
+        "type": "wardrobe",
+        "label": "Wardrobe 200 × 60",
+        "size": { "width": 2.0, "depth": 0.6 },
+        "facing": "south",
+        "clearance": { "side": "front", "distance": 0.9, "label": "doors" },
+        "notes": "Plain doors, mirror on the inside only."
+      },
+      "armchair": {
+        "type": "armchair",
+        "label": "Armchair",
+        "size": { "width": 0.85, "depth": 0.85 },
+        "facing": "south"
+      },
+      "floor-lamp": {
+        "type": "other",
+        "label": "Lamp",
+        "size": { "width": 0.35, "depth": 0.35 }
+      },
+      "bookcase": {
+        "type": "bookcase",
+        "label": "Low bookcase",
+        "size": { "width": 1.2, "depth": 0.35 },
+        "facing": "south",
+        "notes": "About 1 m high, low enough to sit under the window sill."
+      },
+      "plant": {
+        "type": "plant",
+        "label": "Plant",
+        "size": { "width": 0.45, "depth": 0.45 }
+      },
+      "air-conditioner": {
+        "type": "other",
+        "label": "Air conditioner",
+        "size": { "width": 1.0, "depth": 0.25 },
+        "facing": "south",
+        "notes": "Existing split unit mounted high on the wall (about 2.2 m up); it does not take floor space, but nothing tall should stand under it. Front edge is the air outlet."
+      }
+    },
+    "groups": {
+      "bed-group": {
+        "label": "Bed with nightstands",
+        "size": { "width": 2.5, "depth": 2.0 },
+        "notes": "Double bed with a nightstand on each side, 0.1 m gap, flush with the headboard.",
+        "items": {
+          "nightstand-left": { "use": "nightstand", "x": 0, "y": 0 },
+          "bed": { "x": 0.55, "y": 0 },
+          "nightstand-right": { "use": "nightstand", "x": 2.05, "y": 0 }
+        }
+      },
+      "bed-with-headboard": {
+        "label": "Bed against its headboard panel",
+        "size": { "width": 2.7, "depth": 2.05 },
+        "notes": "The bed group standing against the headboard panel, centred on it, so the bed and its solid back move and turn as one unit.",
+        "items": {
+          "headboard-panel": { "x": 0, "y": 0 }
+        },
+        "groups": {
+          "bed-group": { "x": 0.1, "y": 0.05 }
+        }
+      },
+      "desk-group": {
+        "label": "Desk with chair",
+        "size": { "width": 1.6, "depth": 1.6 },
+        "notes": "The office chair stands 0.1 m behind the desk, centred on it, inside the desk's chair clearance.",
+        "items": {
+          "desk": { "x": 0, "y": 0 },
+          "chair": { "use": "office-chair", "x": 0.5, "y": 0.8 }
+        }
+      },
+      "sofa-group": {
+        "label": "Sofa with coffee table",
+        "size": { "width": 2.2, "depth": 1.75 },
+        "notes": "Coffee table centred in front of the sofa with 0.35 m of legroom.",
+        "items": {
+          "sofa": { "x": 0, "y": 0 },
+          "coffee-table": { "x": 0.6, "y": 1.25 }
+        }
+      },
+      "reading-chair": {
+        "label": "Armchair with floor lamp",
+        "size": { "width": 1.25, "depth": 0.85 },
+        "notes": "Reading armchair with the floor lamp at its side, flush with its back.",
+        "items": {
+          "floor-lamp": { "x": 0, "y": 0 },
+          "armchair": { "x": 0.4, "y": 0 }
+        }
+      }
+    },
+    "rooms": {
+      "private-suite": {
+        "title": "Private suite behind a partition",
+        "description": "Feng shui plan for one man, privacy first. A 1.8 m partition down the middle of the room, closed at the north end by a low bookcase, divides a public west side from a private east suite whose only way in is a 0.8 m gap at the south end, in the path of the air conditioner so the cool air carries on into the whole room. The double bed stands in the suite with its headboard against a solid panel in front of the east window and its feet towards the partition, which carries a 43\" TV for watching from bed. From the pillow the suite entrance is in view diagonally and the feet point at the partition, not at a door, while neither room door can see the bed. Both sides of the bed are open, each with its own nightstand, the matching pair feng shui recommends for a single man. The air conditioner blows west across the dressing area, beside the bed rather than onto it, and the wardrobe on the south wall has plain doors so no mirror faces the bed. The reading nook takes the quiet north-east corner by the north window: an armchair with its back to the solid east wall, a floor lamp, and the books on the low bookcase. On the public side the desk and the three-seat sofa both back onto the partition and face west: from the desk the west door is in view diagonally, the north window lights it from the right and only the plain partition shows behind on video calls; the sofa faces the 55\" TV on the west wall with both doors in view. A gallery about 1.2 m wide along the west wall links the leisure-area door and the bathroom door, and a clear 1 m path runs from the bathroom door to the suite entrance. Compromises: the bed commands the suite entrance rather than the room doors, the headboard stands in front of a window (hence the solid panel), and the partition takes the middle of the room. The plan shows no conflicts.",
+        "size": { "width": 6, "depth": 6 },
+        "walls": [
+          { "id": "north", "from": [0, 0], "to": [6, 0], "thickness": 0.15 },
+          { "id": "east", "from": [6, 0], "to": [6, 6], "thickness": 0.15 },
+          { "id": "south", "from": [6, 6], "to": [0, 6], "thickness": 0.15 },
+          { "id": "west", "from": [0, 6], "to": [0, 0], "thickness": 0.15 }
+        ],
+        "openings": [
+          { "type": "window", "wall": "north", "offset": 1.75, "width": 2.5 },
+          { "type": "window", "wall": "east", "offset": 1.75, "width": 2.5 },
+          { "type": "door", "wall": "south", "offset": 4.7, "width": 0.9, "swing": "right" },
+          { "type": "door", "wall": "west", "offset": 4.7, "width": 0.9, "swing": "right" }
+        ],
+        "zones": [
+          { "id": "entry", "label": "Entry", "x": 0, "y": 0, "width": 3, "depth": 1.2 },
+          { "id": "office", "label": "Work", "x": 0, "y": 1.2, "width": 3, "depth": 1.6 },
+          { "id": "lounge", "label": "Lounge", "x": 0, "y": 2.8, "width": 3, "depth": 2.2 },
+          { "id": "bath-route", "label": "To the bathroom", "x": 1.3, "y": 5, "width": 1.7, "depth": 1 },
+          { "id": "reading", "label": "Reading", "x": 3.35, "y": 0, "width": 2.65, "depth": 1.65 },
+          { "id": "sleeping", "label": "Sleeping", "x": 3.1, "y": 1.65, "width": 2.9, "depth": 2.75 },
+          { "id": "dressing", "label": "Dressing", "x": 3.1, "y": 4.4, "width": 2.9, "depth": 1.6 }
+        ],
+        "groups": {
+          "bed-with-headboard": {
+            "x": 3.8,
+            "y": 1.65,
+            "rotation": 90,
+            "notes": "Headboard panel 0.15 m in front of the east window, covering it with 0.1 m to spare at each end; bed centred on the window, feet pointing west at the partition. From the pillow the suite entrance is in view about 45° to the left, and the partition hides the bed from both room doors. The north side opens onto the reading nook, the south side has 0.8 m before the wardrobe's door space, and 0.64 m of passage stays open at the foot past the TV."
+          },
+          "desk-group": {
+            "x": 1.4,
+            "y": 1.2,
+            "rotation": 270,
+            "notes": "Chair with its back to the partition, user facing west: the west door is in view 25° to the right and 0.7 m off the desk's axis, the north window lights the desk from the right, and the camera only sees the partition behind. The bed is out of sight on the other side."
+          },
+          "sofa-group": {
+            "x": 1.25,
+            "y": 2.8,
+            "rotation": 90,
+            "notes": "Sofa backed against the partition, facing west at the 55\" TV with both room doors in view. Screen face 2.04 m from the seat front (about 1.7 × the screen width); 1.19 m stays open between the coffee table and the TV wall for the gallery."
+          },
+          "reading-chair": {
+            "x": 5.15,
+            "y": 0.1,
+            "rotation": 90,
+            "notes": "Armchair with its back to the solid north end of the east wall, facing west towards the bookcase, the north window lighting it from the right and the lamp at its shoulder; a quiet corner well away from both doors."
+          }
+        },
+        "furniture": {
+          "partition": {
+            "x": 3,
+            "y": 1.2,
+            "rotation": 90,
+            "notes": "Runs north to south from the low bookcase to 0.8 m short of the south wall, leaving the suite entrance at its south end; it reaches 0.2 m past the sofa so the bed stays out of sight from the bathroom door. The desk and the sofa back onto its west face, the bedroom TV hangs on its east face."
+          },
+          "bookcase": {
+            "x": 3,
+            "y": 0,
+            "facing": "east",
+            "notes": "Closes the gap between the partition and the north wall under the window, books facing the reading nook; low, so the window still lights both sides."
+          },
+          "bedroom-tv": {
+            "x": 3.1,
+            "y": 2.52,
+            "facing": "east",
+            "notes": "On the partition, centred on the bed, about 2.3 m from the pillow (2.4 × the screen width). Switch it off and cover it at night so the dark screen does not mirror the bed."
+          },
+          "tv": {
+            "x": 0,
+            "y": 3.285,
+            "facing": "east",
+            "notes": "Wall-mounted on the west wall between the two door swings, centred on the sofa."
+          },
+          "wardrobe": {
+            "x": 3.6,
+            "y": 5.4,
+            "facing": "north",
+            "notes": "On the south wall inside the suite, beside the bed's south side and on the way to the suite entrance, so the morning path from bed to wardrobe to bathroom is short. 0.15 m clear of the air conditioner; keep its top below the unit."
+          },
+          "air-conditioner": {
+            "x": 5.75,
+            "y": 4.6,
+            "facing": "west",
+            "notes": "Existing unit, high on the east wall south of the window. It blows west over the dressing area towards the suite entrance, passing 0.25 m south of the headboard panel, so the bed is beside the airflow rather than in it; angle the louvers away from the bed."
+          },
+          "plant-entry": {
+            "use": "plant",
+            "x": 2.55,
+            "y": 0,
+            "notes": "Under the north window by the bookcase, welcoming whoever comes in through the west door and in view from the desk."
+          },
+          "plant-nook": {
+            "use": "plant",
+            "x": 4.3,
+            "y": 0,
+            "notes": "Beside the east end of the north window, in the reading nook."
+          },
+          "plant-lounge": {
+            "use": "plant",
+            "x": 0,
+            "y": 4.6,
+            "notes": "Beside the TV towards the bathroom door, clear of the door swing."
+          }
+        }
+      }
+    }
+  },
+  "templates": [
+    { "room": "private-suite" }
+  ]
+}

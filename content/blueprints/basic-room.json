@@ -1,0 +1,114 @@
+{
+  "title": "Basic room",
+  "description": "6 × 6 m single room combining a sleeping area, a home office under the window and a TV lounge, with a wardrobe along the east wall.",
+  "resources": {
+    "furniture": {
+      "desk": {
+        "type": "desk",
+        "label": "Desk 140 × 70",
+        "size": { "width": 1.4, "depth": 0.7 },
+        "facing": "north",
+        "clearance": { "side": "back", "distance": 0.9, "label": "chair", "allows": ["chair"] }
+      },
+      "chair": {
+        "type": "chair",
+        "label": "Chair",
+        "size": { "width": 0.6, "depth": 0.6 },
+        "facing": "north"
+      },
+      "bookcase": {
+        "type": "bookcase",
+        "label": "Bookcase",
+        "size": { "width": 1.0, "depth": 0.35 },
+        "facing": "south"
+      },
+      "bed": {
+        "type": "bed",
+        "label": "Bed 160 × 200",
+        "size": { "width": 1.6, "depth": 2.0 },
+        "facing": "south",
+        "clearance": { "side": "front", "distance": 0.5, "label": "foot" }
+      },
+      "nightstand": {
+        "type": "nightstand",
+        "label": "Nightstand",
+        "size": { "width": 0.45, "depth": 0.45 }
+      },
+      "wardrobe": {
+        "type": "wardrobe",
+        "label": "Wardrobe 200 × 60",
+        "size": { "width": 2.0, "depth": 0.6 },
+        "facing": "south",
+        "clearance": { "side": "front", "distance": 0.9, "label": "doors" }
+      },
+      "sofa": {
+        "type": "sofa",
+        "label": "Sofa 220 × 90",
+        "size": { "width": 2.2, "depth": 0.9 },
+        "facing": "south"
+      },
+      "coffee-table": {
+        "type": "coffee-table",
+        "label": "Coffee table",
+        "size": { "width": 0.9, "depth": 0.5 }
+      },
+      "tv-unit": {
+        "type": "tv-unit",
+        "label": "TV unit 160 × 45",
+        "size": { "width": 1.6, "depth": 0.45 },
+        "facing": "south"
+      },
+      "tv": {
+        "type": "tv",
+        "label": "TV 55\"",
+        "size": { "width": 1.25, "depth": 0.08 },
+        "facing": "south"
+      },
+      "rug": {
+        "type": "rug",
+        "label": "Rug 200 × 300",
+        "size": { "width": 3.0, "depth": 2.0 }
+      }
+    },
+    "rooms": {
+      "basic": {
+        "title": "Sleeping, office and lounge",
+        "description": "Sleeping area along the east wall with the headboard against it, home office under the west window, TV lounge across the south half. The wardrobe stands on the east wall beside the bed.",
+        "size": { "width": 6, "depth": 6 },
+        "walls": [
+          { "id": "north", "from": [0, 0], "to": [6, 0], "thickness": 0.15 },
+          { "id": "east", "from": [6, 0], "to": [6, 6], "thickness": 0.15 },
+          { "id": "south", "from": [6, 6], "to": [0, 6], "thickness": 0.15 },
+          { "id": "west", "from": [0, 6], "to": [0, 0], "thickness": 0.15 }
+        ],
+        "openings": [
+          { "type": "window", "wall": "north", "offset": 0.6, "width": 1.8 },
+          { "type": "window", "wall": "north", "offset": 3.8, "width": 1.8 },
+          { "type": "door", "wall": "west", "offset": 0.4, "width": 0.9, "swing": "left" }
+        ],
+        "zones": [
+          { "id": "office", "label": "Home office", "x": 0, "y": 0, "width": 2.3, "depth": 2.6 },
+          { "id": "sleeping", "label": "Sleeping", "x": 3.6, "y": 0, "width": 2.4, "depth": 3.3 },
+          { "id": "lounge", "label": "TV lounge", "x": 0.9, "y": 3.0, "width": 3.4, "depth": 3.0 }
+        ],
+        "furniture": {
+          "desk": { "x": 0.3, "y": 0.3, "facing": "north", "notes": "Under the west window, light from the front." },
+          "desk-chair": { "use": "chair", "x": 0.7, "y": 1.1, "facing": "north" },
+          "bookcase": { "x": 0, "y": 1.9, "facing": "east", "notes": "Along the west wall, past the door swing." },
+          "bed": { "x": 3.9, "y": 1.0, "facing": "west", "notes": "Headboard against the east wall." },
+          "nightstand-n": { "use": "nightstand", "x": 5.45, "y": 0.45 },
+          "nightstand-s": { "use": "nightstand", "x": 5.45, "y": 2.7 },
+          "wardrobe": { "x": 5.4, "y": 3.4, "facing": "west", "notes": "On the east wall south of the bed, doors opening into the room." },
+          "sofa": { "x": 1.4, "y": 3.3, "facing": "south" },
+          "coffee-table": { "x": 2.05, "y": 4.4 },
+          "tv-unit": { "x": 1.5, "y": 5.55, "facing": "north" },
+          "tv": { "x": 1.7, "y": 5.6, "facing": "north" },
+          "rug": { "x": 1.0, "y": 3.3 }
+        }
+      }
+    }
+  },
+  "templates": [
+    { "room": "basic" }
+  ]
+}
